@@ -16,7 +16,7 @@ function MainContainer() {
   }, []);
 
   //Allow a user to buy a stock by clicking on it and when it is bought, it should be added to MyPortfolio
-  //From GitHub's solution
+  //From solution
   function handleAddStock(stockToAdd) {
     const stockInPortfolio = portfolio.find(
       stock => stock.id === stockToAdd.id,
@@ -33,7 +33,7 @@ function MainContainer() {
     );
   }
   //Allow a user to sort the list of stocks alphabetically by the ticker name as well as by ascending price.
-  //From GitHub's solution
+  //From solution
   const sortedStocks = [...stocks].sort((stock1, stock2) => {
     if (sortBy === "Alphabetically") {
       return stock1.name.localeCompare(stock2.name);
